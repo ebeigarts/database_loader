@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Edgars Beigarts"]
   s.email       = ["1@wb4.lv"]
   s.homepage    = "http://github.com/ebeigarts/database_loader"
-  s.description = %q{TODO: Write a gem description}
+  s.description = %q{Load SQL views, materialized views, grants, etc. into database}
   s.summary     = s.description
 
   s.files         = `git ls-files`.split("\n")

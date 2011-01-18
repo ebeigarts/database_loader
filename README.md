@@ -1,7 +1,7 @@
 Database Loader
 ===============
 
-Database Loader is a Rails plugin/gem that loads SQL files into database.
+Load SQL views, materialized views, grants, etc. into database.
 
 For tables, use Rails migrations.
 
