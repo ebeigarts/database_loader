@@ -6,13 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "database_loader"
   s.version     = DatabaseLoader::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
+  s.authors     = ["Edgars Beigarts"]
+  s.email       = ["1@wb4.lv"]
+  s.homepage    = "http://github.com/ebeigarts/database_loader"
   s.description = %q{TODO: Write a gem description}
-
-  s.rubyforge_project = "database_loader"
+  s.summary     = s.description
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
