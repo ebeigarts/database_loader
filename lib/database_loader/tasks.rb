@@ -119,7 +119,7 @@ namespace :db do
           # Try to open the folder for manual reviewing
           system `open #{File.join(pkg_dir, pkg_name)}`
           # Cleanup & compress
-          puts "Press any key to continue"; STDIN.getc
+          puts "Press return key to continue"; STDIN.getc
           Dir.chdir(pkg_dir)
           sh "tar cf #{pkg_name}.tar #{pkg_name}"
           ### print

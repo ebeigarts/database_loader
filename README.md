@@ -55,6 +55,11 @@ you can generate a package containing all your SQL files and send it to DBA.
     rake db:sql:package:local NAME="v1"
     rake db:sql:package:ext NAME="v1"
 
+By default the package is going to be generated between your current commit and Master branch.
+If you would like to change this behavior, provide the starting point as COMMIT parameter.
+
+    rake db:sql:package:ext NAME="v1" COMMIT="master"
+
 ## Configuration
 
 config/initializers/database_loader.rb
