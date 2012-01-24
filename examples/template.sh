@@ -12,7 +12,7 @@ do
       if test -r ${sql_file}
       then
         echo create ${sql_dir} ${sql_file}
-        sqlplus -s $1/$1 @${sql_file}
+        sqlplus -s $1/$2 @${sql_file}
       fi
     done
   fi
