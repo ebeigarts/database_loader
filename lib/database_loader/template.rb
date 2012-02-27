@@ -14,11 +14,11 @@ module DatabaseLoader
       when :erb
         require "erb"
         struct = OpenStruct.new(options)
-        ERB.new(contents).result(struct.send(:binding))
+        ERB.new(contents).result(struct.instance_eval{binding})
       when :erubis
         require "erubis"
         struct = OpenStruct.new(options)
-        Erubis::Eruby.new(contents).result(struct.send(:binding))
+        Erubis::Eruby.new(contents).result(struct.instance_eval{binding})
       else
         contents
       end
