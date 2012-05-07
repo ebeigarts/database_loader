@@ -42,6 +42,10 @@ In Rails 2.x you also need to add this to you Rakefile
     rake db:sql:load:local
     rake db:sql:load:ext
 
+To load a single file into database provide file name without extension in NAME environment variable
+
+    rake db:sql:load:local:view NAME="xx_example_v"
+
 ## Preview generated SQL
 
     rake db:sql:dump:local
